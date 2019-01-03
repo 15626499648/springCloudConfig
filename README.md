@@ -1,2 +1,2 @@
 # springCloudConfig
-springCloud配置中心
+springCloud学习demo
