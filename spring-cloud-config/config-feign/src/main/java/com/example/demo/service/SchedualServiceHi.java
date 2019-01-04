@@ -5,8 +5,10 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 
-@FeignClient(value = "CONFIG-CLIENT")
+@FeignClient(value = "CONFIG-CLIENT",fallback = SchedualServiceHiHystric.class)
 public interface SchedualServiceHi {
-    @RequestMapping(value = "/hello",method = RequestMethod.GET)
+
+    @RequestMapping(value = "/hello", method = RequestMethod.GET)
     String sayHiFromClientOne(@RequestParam(value = "name") String name);
+
 }
