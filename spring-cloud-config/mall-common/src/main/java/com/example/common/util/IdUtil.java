@@ -1,6 +1,7 @@
 package com.example.common.util;
 
 import java.util.Random;
+import java.util.UUID;
 
 public class IdUtil {
 
@@ -15,4 +16,14 @@ public class IdUtil {
         long id = new Long(str);
         return id;
     }
+
+    public static String getOrderNumberByUUId() {
+        int machineId = 1;//最大支持1-9个集群机器部署
+        int hashCodeV = UUID.randomUUID().toString().hashCode();
+        if (hashCodeV < 0) {//有可能是负数
+            hashCodeV = -hashCodeV;
+        }
+        return machineId + String.format("%015d", hashCodeV);
+    }
+
 }

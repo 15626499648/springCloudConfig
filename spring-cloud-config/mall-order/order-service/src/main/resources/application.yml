@@ -1,0 +1,3 @@
+mybatis:
+  type-aliases-package: com.example.common.domain
+  mapper-locations: classpath:mapping/*.xml
