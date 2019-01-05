@@ -6,6 +6,7 @@ spring:
     name: product-service
   cloud:
     config:
+      name: data-source
       fail-fast: true
       discovery:
         enabled: true
