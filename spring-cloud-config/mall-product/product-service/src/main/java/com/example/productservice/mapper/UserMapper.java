@@ -1,6 +1,7 @@
 package com.example.productservice.mapper;
 
-import com.example.productservice.model.User;
+
+import com.example.common.domain.User;
 
 import java.util.List;
 

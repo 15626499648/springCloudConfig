@@ -9,6 +9,6 @@
 #    name: product-service
 
 mybatis:
-  check-config-location: false
-  type-aliases-package: com.example.productservice.model
+#  check-config-location: false
+  type-aliases-package: com.example.common.domain
   mapper-locations: classpath:mapping/*.xml

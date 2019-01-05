@@ -1,4 +1,4 @@
-package com.example.productservice.model;
+package com.example.common.domain;
 
 import java.io.Serializable;
 
